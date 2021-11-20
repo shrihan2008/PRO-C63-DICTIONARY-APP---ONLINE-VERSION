@@ -72,49 +72,10 @@ export default class HomeScreen extends Component{
             text: 'Pocket Dictionary',
             style: { color: '#fff', fontSize: 20 },
           }}
-        >
+        />
         <View style={styles.inputBoxContainer}>
       
-        <Text 
-           onChangeText={text => {
-              this.setState({
-                text: text,
-                isSearchPressed: false,
-                word  : "Loading...",
-                lexicalCategory :'',
-                examples : [],
-                definition : ""
-              });
-           }}
-        >
-  
-     {   <input 
-           onChangeText={text => {
-              this.setState({
-                text: text,
-                isSearchPressed: false,
-                word  : "Loading...",
-                lexicalCategory :'',
-                examples : [],
-                definition : ""
-              });
-           }}
-        /> 
-        }
-      {
-      <TouchableOpacity 
-           onChangeText={text => {
-              this.setState({
-                text: text,
-                isSearchPressed: false,
-                word  : "Loading...",
-                lexicalCategory :'',
-                examples : [],
-                definition : ""
-              });
-           }}
-        /> 
-      }
+       
       {
           <TextInput
             style={styles.inputBox}
@@ -130,7 +91,7 @@ export default class HomeScreen extends Component{
             }}
             value={this.state.text}
           />
-  }
+ }
           <TouchableOpacity
             style={styles.searchButton}
             onPress={() => {
